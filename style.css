@@ -172,6 +172,18 @@ font-family: 'Kaushan Script', fantasy;
 
 }
 
+#social-newsfeed{
+  max-width: 500px;
+  margin: auto;
+}
+.newsfeed-container{
+  overflow: hidden;
+}
+.twitter-timeline{
+  width: 100%;
+  border: none;
+}
+
 
 #service {
   width: 100%;
