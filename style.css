@@ -38,6 +38,10 @@ header ul li a:focus {
   padding: 10px;
 }
 
+.signin-link{
+  float: right;
+}
+
 
 
   #span{
