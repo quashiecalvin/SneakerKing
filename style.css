@@ -193,7 +193,10 @@ font-family: 'Kaushan Script', fantasy;
 #service_homepage {
   background: linear-gradient(rgba(0,0,0,0.5),#272828), url(https://e0.pxfuel.com/wallpapers/609/703/desktop-wallpaper-black-and-teal-black-and-teal-background-on-bat-black-and-green-gradient-thumbnail.jpg);
   background-size: cover;
-  background-position: center"
+  background-position: center;
+  text-align: center;
+  padding: 70px 0;
+  width: 100%;
 }
 
 .title-text {
