@@ -43,7 +43,6 @@ header ul li a:focus {
 }
 
 
-
   #span{
       background: linear-gradient(rgba(0,0,0,0.5),#272828), url(https://images.unsplash.com/photo-1633464129147-777bdcc97c1d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c25lYWtlciUyMHN0b3JlfGVufDB8fDB8fHww);
       background-size: cover;
@@ -105,6 +104,12 @@ font-family: 'Kaushan Script', fantasy;
   opacity: 0.3;
   background-color: black;
 }
+  #service{
+    background: linear-gradient(rgba(0,0,0,0.5),#272828), url(https://e0.pxfuel.com/wallpapers/609/703/desktop-wallpaper-black-and-teal-black-and-teal-background-on-bat-black-and-green-gradient-thumbnail.jpg);
+ background-size: cover;
+ background-position: center"
+}
+
 #order{
   width: 100%;
   padding: 70px 0;
