@@ -540,7 +540,8 @@ fieldset {
   padding: 10px;
 }
 
-form {
+form.login-form,
+form.signup-form {
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -548,6 +549,7 @@ form {
   margin-left: 40%;
   margin-top: 5%;
 }
+
 
 
 
