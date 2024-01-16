@@ -531,12 +531,12 @@ form {
   margin-top: 5%;
 }
 
-.search-form-container { 
+.search-form { 
   display: inline-block;
   vertical-align: middle;
   margin-top: 7px;
 }
-.search-form-container input[type="text"] {
+.search-form input[type="text"] {
   padding: 8px;
   color: black; 
   background-color: white; 
@@ -544,12 +544,24 @@ form {
   width: 350px; 
   margin-right: 5px; 
 }
-.search-form-container button {
+.search-form button {
   cursor: pointer;
   padding: 10px;
 }
 
-.login-form button,
+.login-form button{
+  background-color: teal;
+    color: white;
+    width: 35%;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
 .signup-form button {
     background-color: teal;
     color: white;
@@ -564,7 +576,9 @@ form {
     transition-duration: 0.4s;
 }
 
-.login-form button:hover,
+.login-form button:hover{
+  background-color: #00bcd4;
+}
 .signup-form button:hover {
     background-color: #00bcd4;
 }
