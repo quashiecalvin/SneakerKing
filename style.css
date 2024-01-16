@@ -531,12 +531,12 @@ form {
   margin-top: 5%;
 }
 
-.search-form { 
+.search-form-container { 
   display: inline-block;
   vertical-align: middle;
   margin-top: 7px;
 }
-.search-form input[type="text"] {
+.search-form-container input[type="text"] {
   padding: 8px;
   color: black; 
   background-color: white; 
@@ -544,7 +544,7 @@ form {
   width: 350px; 
   margin-right: 5px; 
 }
-.search-form button {
+.search-form-container button {
   cursor: pointer;
   padding: 10px;
 }
