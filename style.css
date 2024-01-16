@@ -540,15 +540,6 @@ fieldset {
   margin-bottom: 10px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  margin-bottom: 20px;
-  margin-left: 40%;
-  margin-top: 5%;
-}
-
 
 ul {
   list-style-type: none;
@@ -584,6 +575,9 @@ li a:hover:not(.active) {
 .active {
   background-color: #04AA6D;
 }
+
+
+
 
 
 
