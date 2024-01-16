@@ -3,6 +3,7 @@
         <title>Sneaker King</title>
         <link rel="stylesheet" href="style.css">     
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     </head>
     <body>
@@ -27,7 +28,33 @@
 
 
 
+                  <script>
+                    $(document).ready(function() {
+                      $("#searchInput").on("keyup", function() {
+                        var searchText = $(this).val().toLowerCase();
                   
+                        
+                        $("p, h1, h2, h3, span, div, li, etc.").each(function() {
+                          var textToSearch = $(this).text().toLowerCase();
+                  
+                         
+                          if (textToSearch.includes(searchText)) {
+                            
+                            $(this).html(
+                              textToSearch.replace(
+                                new RegExp(searchText, "ig"),
+                                match => `<span class="highlight">${match}</span>`
+                              )
+                            );
+                          } else {
+                            
+                            $(this).html(textToSearch);
+                          }
+                        });
+                      });
+                    });
+                  </script>
+                                 
 
 
  

@@ -664,3 +664,9 @@ li a:hover:not(.active) {
     text-align: center;
   }
 }
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+
