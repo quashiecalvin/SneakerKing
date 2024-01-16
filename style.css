@@ -522,14 +522,7 @@ fieldset {
   margin-bottom: 10px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  margin-bottom: 20px;
-  margin-left: 40%;
-  margin-top: 5%;
-}
+
 
 .search-form { 
   display: inline-block;
