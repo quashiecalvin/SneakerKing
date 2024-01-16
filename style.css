@@ -522,6 +522,24 @@ fieldset {
   margin-bottom: 10px;
 }
 
+.search-bar { 
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 7px;
+}
+.search-bar input[type="text"] {
+  padding: 8px;
+  color: black; 
+  background-color: white; 
+  border: none; 
+  width: 350px; 
+  margin-right: 5px; 
+}
+.search-bar button {
+  cursor: pointer;
+  padding: 10px;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -531,23 +549,7 @@ form {
   margin-top: 5%;
 }
 
-form.search-bar { 
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: 7px;
-}
-form.search-bar input[type="text"] {
-  padding: 8px;
-  color: black; 
-  background-color: white; 
-  border: none; 
-  width: 350px; 
-  margin-right: 5px; 
-}
-form.search-bar button {
-  cursor: pointer;
-  padding: 10px;
-}
+
 
 .login-form button{
   background-color: teal;
