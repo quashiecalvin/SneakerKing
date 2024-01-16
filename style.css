@@ -646,3 +646,21 @@ li a:hover:not(.active) {
   color: aliceblue;
 }
 
+
+@media screen and (max-width: 600px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    float: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  li a {
+    padding: 14px;
+    text-align: center;
+  }
+}
