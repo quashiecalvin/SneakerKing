@@ -4,7 +4,17 @@
         <link rel="stylesheet" href="style.css"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
             
-
+        <style>
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                margin-bottom: 20px;
+                margin-left: 40%;
+                margin-top: 5%;
+            }
+                
+        </style>
     </head>
     <body>
                 
@@ -32,7 +42,14 @@
                         <label for="loginPassword">Password:</label>
                         <input type="password" id="loginPassword" name="loginPassword" required>
 
-                        <button type="submit"class="login-button"> Log in </button>
+                        <button type="submit" style="background-color: teal; color: white; width: 35%; padding: 10px 20px; 
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        cursor: pointer;
+                        border-radius: 12px; 
+                        transition-duration: 0.4s;">Log in</button>
 
                     </fieldset>           
                 </form>
@@ -63,7 +80,14 @@
                         <input type="tel" id="phone" name="phone">
                     </br>
 
-                        <button type="submit" class="signup-button">Sign Up</button>
+                        <button type="submit" style="background-color: teal; color: white; width: 35%; padding: 10px 20px; margin-top: 10%; 
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        cursor: pointer;
+                        border-radius: 12px; 
+                        transition-duration: 0.4s;">Sign Up</button>
                     </fieldset>           
                 </form>
 
