@@ -522,22 +522,31 @@ fieldset {
   margin-bottom: 10px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 20px;
+  margin-left: 40%;
+  margin-top: 5%;
+}
 
-
-.search-form { 
+.form-container > .search-form {
   display: inline-block;
   vertical-align: middle;
   margin-top: 7px;
 }
-.search-form input[type="text"] {
+
+.form-container > .search-form input[type="text"] {
   padding: 8px;
-  color: black; 
-  background-color: white; 
-  border: none; 
-  width: 350px; 
-  margin-right: 5px; 
+  color: black;
+  background-color: white;
+  border: none;
+  width: 350px;
+  margin-right: 5px;
 }
-.search-form button {
+
+.form-container > .search-form button {
   cursor: pointer;
   padding: 10px;
 }
