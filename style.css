@@ -28,24 +28,6 @@ header ul li a:focus {
 }
 
 
-.search-form { 
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: 7px;
-}
-.search-form input[type="text"] {
-  padding: 8px;
-  color: black; 
-  background-color: white; 
-  border: none; 
-  width: 350px; 
-  margin-right: 5px; 
-}
-.search-form button {
-  cursor: pointer;
-  padding: 10px;
-}
-
 .signin-link{
   float: right;
 }
@@ -547,6 +529,24 @@ form {
   margin-bottom: 20px;
   margin-left: 40%;
   margin-top: 5%;
+}
+
+.search-form { 
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 7px;
+}
+.search-form input[type="text"] {
+  padding: 8px;
+  color: black; 
+  background-color: white; 
+  border: none; 
+  width: 350px; 
+  margin-right: 5px; 
+}
+.search-form button {
+  cursor: pointer;
+  padding: 10px;
 }
 
 .login-form button,
