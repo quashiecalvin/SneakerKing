@@ -27,7 +27,7 @@
                             <button><a href="#kids">Kids'</a></button>
                         </div>
             
-                        <div id="all" class="product-cards">
+                        <div id="all" class="product-cards searchable-content">
                             <div class="product-card all">
                                 <h2>All Sneakers</h2>
                                 <p>Any details...</p>
@@ -35,7 +35,7 @@
 
                         </div>
             
-                        <div id="mens" class="product-cards">
+                        <div id="mens" class="product-cards searchable-content">
                             <div class="product-card mens">
                                 <div class="product-image">
                                     <img src="https://cdna.lystit.com/1040/1300/n/photos/slamjamsocialism/81a348e7/nike-Multicolor-Air-Jordan-1-Mid-Sneakers-White-Gym-Red-Black.jpeg">
@@ -109,7 +109,7 @@
                         </div>
             
                        
-                        <div id="womens" class="product-cards">
+                        <div id="womens" class="product-cards searchable-content">
                             <div class="product-card womens">
                                 <div class="product-image">
                                     <img src="https://sneakervaultnz.com/cdn/shop/products/IMG_8205.heic?v=1675715514&width=533">
@@ -147,7 +147,7 @@
 
                         </div>
                         
-<div id="kids" class="product-cards">
+<div id="kids" class="product-cards searchable-content">
     <div class="product-card kids">
         <div class="product-image">
             <img src="https://gh.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/76/971504/1.jpg?1692">
@@ -225,5 +225,18 @@
         </div>
         </div>
 </section>
+
+<script>
+    $(document).ready(function() {
+        $('#searchInput').on('input', function() {
+            var searchTerm = $(this).val().toLowerCase();
+            $('.searchable-content').each(function() {
+                var text = $(this).text().toLowerCase();
+                var isVisible = text.includes(searchTerm);
+                $(this).toggle(isVisible);
+            });
+        });
+    });
+</script>
     </body>
 </html>
