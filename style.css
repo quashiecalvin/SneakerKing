@@ -536,7 +536,7 @@ form {
   vertical-align: middle;
   margin-top: 7px;
 }
-.search-form input[type="text"] {
+.search-form .search-input {
   padding: 8px;
   color: black; 
   background-color: white; 
