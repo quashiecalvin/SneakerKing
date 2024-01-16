@@ -611,12 +611,12 @@ li a:hover:not(.active) {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    text-align: center; /* Center the items for small screens */
+    text-align: center; 
   }
 
   header li {
     float: none;
-    display: inline-block;
+    display: block;
   }
 
   header li a {
@@ -625,6 +625,11 @@ li a:hover:not(.active) {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+  }
+
+  .signin-link {
+    float: none;
+    margin-top: 10px; 
   }
 }
 
