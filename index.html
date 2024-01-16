@@ -116,15 +116,16 @@
 
 <script>
     $(document).ready(function() {
-        $('#searchInput').on('input', function() {
-            var searchTerm = $(this).val().toLowerCase();
-            $('.searchable-content').each(function() {
-                var text = $(this).text().toLowerCase();
-                var isVisible = text.includes(searchTerm);
-                $(this).closest('.product-cards').toggle(isVisible);
-            });
+    $('#searchInput').on('input', function() {
+        var searchTerm = $(this).val().toLowerCase();
+        $('.searchable-content').each(function() {
+            var text = $(this).text().toLowerCase();
+            var isVisible = text.includes(searchTerm);
+            $(this).toggle(isVisible);
         });
     });
+});
+
 </script>
 
     </body>
