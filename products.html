@@ -233,10 +233,11 @@
             $('.searchable-content').each(function() {
                 var text = $(this).text().toLowerCase();
                 var isVisible = text.includes(searchTerm);
-                $(this).toggle(isVisible);
+                $(this).closest('.product-cards').toggle(isVisible);
             });
         });
     });
 </script>
+
     </body>
 </html>
