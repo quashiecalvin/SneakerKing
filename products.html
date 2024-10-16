@@ -1,248 +1,315 @@
 <!DOCTYPE html>
- <html>
+<html>
     <head>
-        <title>Sneaker King</title>
+        <title>Products - Sneaker King</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>   
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     </head>
     <body>
-                
-               <header> <ul>
-                    <li><a href="index.html">Home</a></li>
-             
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <form class="search-bar" action="products.html" method="GET">
-                        <input type="text" name="search" id="searchInput" placeholder="Search by category...">
-                        <button type="submit"><i class="fas fa-search"></i></button>
-                    </form>
-                    <li class="signin-link"><a href="signin.html"><i class="fas fa-user"></i> </a></li>
+        <header>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <form class="search-bar" action="products.html" method="GET">
+                    <input type="text" name="search" id="searchInput" placeholder="Search by category...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <li class="cart-link"><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li> 
+                <li class="signin-link"><a href="signin.html"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </header>
 
-                  </ul></header>
+        <section id="products">
+            <div class="container">
+                <h1>Our Products</h1>
+                <div class="categories">
+                    <button> <a href="#mens">Men's</a></button>
+                    <button> <a href="#womens">Women's</a></button>
+                    <button><a href="#kids">Kids'</a></button>
+                </div>
+        
+                <!-- All Sneakers Section -->
+                <div id="all" class="product-cards searchable-content">
+                    <div class="product-card all">
+                        <h2>All Sneakers</h2>
+                    </div>
+                </div>
+        
+                <!-- Men's Sneakers Section -->
+<div id="mens" class="product-cards searchable-content">
+    <div class="product-card mens">
+        <div class="product-image">
+            <img src="https://cdna.lystit.com/1040/1300/n/photos/slamjamsocialism/81a348e7/nike-Multicolor-Air-Jordan-1-Mid-Sneakers-White-Gym-Red-Black.jpeg">
+        </div>
+        <div class="product-details">
+            <h2>Men's Air Jordan 1 High</h2>
+            <p>Price: $99</p>
+            <p>Sizes Available: US 6-12</p>
+            <button data-name="Men's Air Jordan 1 High" data-price="99">Add to Cart</button>
+        </div>
+    </div>
 
-                  <section id="products">
-                    <div class="container">
-                        <h1>Our Products</h1>
-                        <div class="categories">
-                            <button> <a href="#mens">Men's</a></button>
-                            <button> <a href="#womens">Women's</a></button>
-                            <button><a href="#kids">Kids'</a></button>
-                        </div>
-            
-                        <div id="all" class="product-cards searchable-content">
-                            <div class="product-card all">
-                                <h2>All Sneakers</h2>
-                            </div>
+    <div class="product-card mens">
+        <div class="product-image">
+            <img src="https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY4MDMxMzYwMjA0MDg4NzA0/air-jordan-xijpg.jpg">
+        </div>
+        <div class="product-details">
+            <h2>Men's Air Jordan 11</h2>
+            <p>Price: $99</p>
+            <p>Sizes Available: US 6-12</p>
+            <button data-name="Men's Air Jordan 11" data-price="99">Add to Cart</button>
+        </div>
+    </div>
 
-                        </div>
-            
-                        <div id="mens" class="product-cards searchable-content">
-                            <div class="product-card mens">
-                                <div class="product-image">
-                                    <img src="https://cdna.lystit.com/1040/1300/n/photos/slamjamsocialism/81a348e7/nike-Multicolor-Air-Jordan-1-Mid-Sneakers-White-Gym-Red-Black.jpeg">
-                                </div>
-                                <div class="product-details">
-                                    <h2>Men's Air Jordan 1 High</h2>
-                                    <p>Price: $99</p>
-                                    <p>Sizes Available: US 6-12</p>
-                                    <button>Add to Cart</button>
-                                </div>
-                            </div>
+    <div class="product-card mens">
+        <div class="product-image">
+            <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/7cd6bbb4-f273-4a59-96d7-8a118a76db2a/air-presto-mens-shoes-JlLlWz.png">
+        </div>
+        <div class="product-details">
+            <h2>Men's Nike Presto</h2>
+            <p>Price: $99</p>
+            <p>Sizes Available: US 6-12</p>
+            <button data-name="Men's Nike Presto" data-price="99">Add to Cart</button>
+        </div>
+    </div>
 
-                            <div class="product-card mens">
-                                <div class="product-image">
-                                    <img src="https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY4MDMxMzYwMjA0MDg4NzA0/air-jordan-xijpg.jpg">
-                                </div>
-                                <div class="product-details">
-                                    <h2>Men's Air Jordan 11</h2>
-                                    <p>Price: $99</p>
-                                    <p>Sizes Available: US 6-12</p>
-                                    <button>Add to Cart</button>
-                                </div>
-                            </div>
+    <div class="product-card mens">
+        <div class="product-image">
+            <img src="https://assets.adidas.com/images/w_940,f_auto,q_auto/bd43ce71f589498ab6b1aad6009a0e6e_9366/EG4958_07_standard.jpg">
+        </div>
+        <div class="product-details">
+            <h2>Men's Adidas Alexander McQueen</h2>
+            <p>Price: $74.99</p>
+            <p>Sizes Available: US 6-12</p>
+            <button data-name="Men's Adidas Alexander McQueen" data-price="74.99">Add to Cart</button>
+        </div>
+    </div>
 
-                            <div class="product-card mens">
-                                <div class="product-image">
-                                    <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/7cd6bbb4-f273-4a59-96d7-8a118a76db2a/air-presto-mens-shoes-JlLlWz.png">
-                                </div>
-                                <div class="product-details">
-                                    <h2>Men's Nike Presto</h2>
-                                    <p>Price: $99</p>
-                                    <p>Sizes Available: US 6-12</p>
-                                    <button>Add to Cart</button>
-                                </div>
-                            </div>
-                            <div class="product-card mens">
-                                <div class="product-image">
-                                    <img src="https://assets.adidas.com/images/w_940,f_auto,q_auto/bd43ce71f589498ab6b1aad6009a0e6e_9366/EG4958_07_standard.jpg">
-                                </div>
-                                <div class="product-details">
-                                    <h2>Men's Adidas Alexander McQueen</h2>
-                                    <p>Price: $74.99</p>
-                                    <p>Sizes Available: US 6-12</p>
-                                    <button>Add to Cart</button>
-                                </div>
-                            </div>
-                            <div class="product-card mens">
-                                <div class="product-image">
-                                    <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/5a55b7ab-7644-4de2-851f-7639b00ee98f/air-jordan-13-wheat-shoes-pvTjVke9.png">
-                                </div>
-                                <div class="product-details">
-                                    <h2>Men's Air Jordan 13</h2>
-                                    <p>Price: $89</p>
-                                    <p>Sizes Available: US 6-12</p>
-                                    <button>Add to Cart</button>
-                                </div>
-                            </div>
+    <div class="product-card mens">
+        <div class="product-image">
+            <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/5a55b7ab-7644-4de2-851f-7639b00ee98f/air-jordan-13-wheat-shoes-pvTjVke9.png">
+        </div>
+        <div class="product-details">
+            <h2>Men's Air Jordan 13</h2>
+            <p>Price: $89</p>
+            <p>Sizes Available: US 6-12</p>
+            <button data-name="Men's Air Jordan 13" data-price="89">Add to Cart</button>
+        </div>
+    </div>
 
-                            <div class="product-card mens">
-                                <div class="product-image">
-                                    <img src="https://img.buzzfeed.com/buzzfeed-static/static/2023-08/3/15/campaign_images/00558956fddb/red-cement-air-jordan-4-releases-in-september-3-577-1691077893-6_16x9.jpg">
-                                </div>
-                                <div class="product-details">
-                                    <h2>Men's Air Jordan 4</h2>
-                                    <p>Price: $99</p>
-                                    <p>Sizes Available: US 6-12</p>
-                                    <button>Add to Cart</button>
-                                </div>
-                            </div>
+    <div class="product-card mens">
+        <div class="product-image">
+            <img src="https://img.buzzfeed.com/buzzfeed-static/static/2023-08/3/15/campaign_images/00558956fddb/red-cement-air-jordan-4-releases-in-september-3-577-1691077893-6_16x9.jpg">
+        </div>
+        <div class="product-details">
+            <h2>Men's Air Jordan 4</h2>
+            <p>Price: $99</p>
+            <p>Sizes Available: US 6-12</p>
+            <button data-name="Men's Air Jordan 4" data-price="99">Add to Cart</button>
+        </div>
+    </div>
+</div>
 
-                        </div>
-            
-                       
-                        <div id="womens" class="product-cards searchable-content">
-                            <div class="product-card womens">
-                                <div class="product-image">
-                                    <img src="https://sneakervaultnz.com/cdn/shop/products/IMG_8205.heic?v=1675715514&width=533">
-                                </div>
-                                <div class="product-details">
-                                    <h2>Women's Air Jordan 1 Low</h2>
-                                    <p>Price: $89</p>
-                                    <p>Sizes Available: US 5-10</p>
-                                    <button>Add to Cart</button>
-                                </div>
-                            </div>
+<!-- Women's Sneakers Section -->
+<div id="womens" class="product-cards searchable-content">
+    <div class="product-card womens">
+        <div class="product-image">
+            <img src="https://sneakervaultnz.com/cdn/shop/products/IMG_8205.heic?v=1675715514&width=533">
+        </div>
+        <div class="product-details">
+            <h2>Women's Air Jordan 1 Low</h2>
+            <p>Price: $89</p>
+            <p>Sizes Available: US 5-10</p>
+            <button data-name="Women's Air Jordan 1 Low" data-price="89">Add to Cart</button>
+        </div>
+    </div>
 
-                            <div class="product-card womens">
-                                <div class="product-image">
-                                    <img src="https://i.pinimg.com/736x/9d/eb/70/9deb7079d745a78ac8a848900ea26e26.jpg">
-                                </div>
-                                <div class="product-details">
-                                    <h2>Women's Air Jordan 1 High</h2>
-                                    <p>Price: $89</p>
-                                    <p>Sizes Available: US 5-10</p>
-                                    <button>Add to Cart</button>
-                                </div>
-                            </div>
-                            <div class="product-card womens">
-                                <div class="product-image">
-                                    <img src="https://data.mascheronistore.com/imgprodotto/sneakers-retropy-e5-woman-white-black_119263_zoom.jpg">
-                                </div>
-                                <div class="product-details">
-                                    <h2>Women's Adidas Trainers</h2>
-                                    <p>Price: $69</p>
-                                    <p>Sizes Available: US 5-10</p>
-                                    <button>Add to Cart</button>
-                                </div>
-                            </div>
+    <div class="product-card womens">
+        <div class="product-image">
+            <img src="https://i.pinimg.com/736x/9d/eb/70/9deb7079d745a78ac8a848900ea26e26.jpg">
+        </div>
+        <div class="product-details">
+            <h2>Women's Air Jordan 1 High</h2>
+            <p>Price: $89</p>
+            <p>Sizes Available: US 5-10</p>
+            <button data-name="Women's Air Jordan 1 High" data-price="89">Add to Cart</button>
+        </div>
+    </div>
 
-                        </div>
-                        
+    <div class="product-card womens">
+        <div class="product-image">
+            <img src="https://data.mascheronistore.com/imgprodotto/sneakers-retropy-e5-woman-white-black_119263_zoom.jpg">
+        </div>
+        <div class="product-details">
+            <h2>Women's Adidas Trainers</h2>
+            <p>Price: $69</p>
+            <p>Sizes Available: US 5-10</p>
+            <button data-name="Women's Adidas Trainers" data-price="69">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<!-- Kids' Sneakers Section -->
 <div id="kids" class="product-cards searchable-content">
     <div class="product-card kids">
         <div class="product-image">
-            <img src="https://gh.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/76/971504/1.jpg?1692">
+            <img src="https://m.media-amazon.com/images/I/71VQx46KAsL._AC_SL1500_.jpg">
         </div>
         <div class="product-details">
             <h2>Kids' Sneaker Model 1</h2>
             <p>Price: $39</p>
             <p>Sizes Available: US 2-6</p>
-            <button>Add to Cart</button>
+            <button data-name="Kids' Sneaker Model 1" data-price="39">Add to Cart</button>
         </div>
     </div>
 
-    <div class="product-card kidss">
+    <div class="product-card kids">
         <div class="product-image">
-            <img src="https://gh.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/25/041347/1.jpg?8394">
+            <img src="https://d330gmu8jafas0.cloudfront.net/product/6603873601/1125x1500/6603873601-1.jpg">
         </div>
         <div class="product-details">
             <h2>Kids' Sneaker Model 2</h2>
             <p>Price: $49.99</p>
             <p>Sizes Available: US 2-6</p>
-            <button>Add to Cart</button>
+            <button data-name="Kids' Sneaker Model 2" data-price="49.99">Add to Cart</button>
         </div>
     </div>
 
-    <div class="product-card kidss">
+    <div class="product-card kids">
         <div class="product-image">
             <img src="https://images-cdn.ubuy.co.in/635c04edbd578c269a7f5d14-dvteni-kids-sneakers-for-boys-girls.jpg">
         </div>
         <div class="product-details">
-            <h2>Kids' Sneaker Model 1</h2>
+            <h2>Kids' Sneaker Model 3</h2>
             <p>Price: $47.99</p>
             <p>Sizes Available: US 2-6</p>
-            <button>Add to Cart</button>
+            <button data-name="Kids' Sneaker Model 3" data-price="47.99">Add to Cart</button>
         </div>
     </div>
-
 </div>
 
-                    </div>
-                </section>
- 
- 
-<section id="footer">
-    <div class="title-text2">
+                </div>
         
-        <h1>Reach Us</h1>
-        </div>
- <div class="footer-row">
- <div class="footer-left">
-     <h1>Working Hours</h1>
-     <p>Monday to Friday - 8am to 8pm</p>
-     <p>Saturdays - 10am to 10pm</p>
+            </div>
+        </section>
+        
 
-     
-     <div class="social">
-       <p> 
-        <ul>
-            <li>Follow us: </li>
-            
-        </p>
-       
-   <li><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></li> 
-   <li> <a href ="https://www.snapchat.com/add/hunter.7878" class="fa fa-snapchat"></a></li> 
-   <li> <a href ="https://twitter.com/_kay_hunter" class="fa fa-twitter"></a></li> 
-   <li> <a href ="https://www.instagram.com/hunter.78780/" class="fa fa-instagram"></a></li> 
-</ul>
-</ul>
-</div>
-</div>
- <div class="orders-text">
-    <h1>Get In Touch</h1>
-    <p>22 Palas Street, Tantra</p>
-    <p>sneakerking@gmail.com</p>
-       <p>0243228371</p>
+        <section id="footer">
+            <div class="title-text2">
+                
+                <h1>Reach Us</h1>
+                </div>
+         <div class="footer-row">
+         <div class="footer-left">
+             <h1>Working Hours</h1>
+             <p>Monday to Friday - 8am to 8pm</p>
+             <p>Saturdays - 10am to 10pm</p>
+        
+             
+             <div class="social">
+               <p> 
+                <ul>
+                    <li>Follow us: </li>
+                    
+                </p>
+               
+           <li><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></li> 
+           <li> <a href ="https://www.snapchat.com/add/hunter.7878" class="fa fa-snapchat"></a></li> 
+           <li> <a href ="https://twitter.com/_kay_hunter" class="fa fa-twitter"></a></li> 
+           <li> <a href ="https://www.instagram.com/hunter.78780/" class="fa fa-instagram"></a></li> 
+        </ul>
         </div>
         </div>
-</section>
+         <div class="orders-text">
+            <h1>Get In Touch</h1>
+            <p>22 Palas Street, Tantra</p>
+            <p>sneakerking@gmail.com</p>
+               <p>0243228371</p>
+                </div>
+                </div>
+        </section>
 
-<script>
-    $(document).ready(function() {
-    $('#searchInput').on('input', function() {
-        var searchTerm = $(this).val().toLowerCase();
-        $('.searchable-content').each(function() {
-            var text = $(this).text().toLowerCase();
-            var isVisible = text.includes(searchTerm);
-            $(this).toggle(isVisible);
+        <script>
+            $(document).ready(function() {
+    // Add to Cart button handler
+    $('.product-card button').on('click', function() {
+        // Get the product details from the card
+        var productName = $(this).closest('.product-details').find('h2').text().trim(); // Use closest to ensure proper context
+        var productPriceText = $(this).closest('.product-details').find('p').first().text().trim(); // Get the first paragraph for price
+        
+        // Extract the numeric value from the price text
+        var productPrice = parseFloat(productPriceText.replace('Price: $', '').trim());
+
+        // Log to check the captured values
+        console.log('Product Name:', productName);
+        console.log('Product Price:', productPrice);
+
+        // Retrieve cart from localStorage or create an empty one
+        var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Check if the item already exists in the cart
+        var existingItem = cart.find(function(item) {
+            return item.name === productName;
         });
+
+        if (existingItem) {
+            // If it exists, increase the quantity
+            existingItem.quantity += 1;
+        } else {
+            // Otherwise, add the new item with quantity 1
+            cart.push({
+                name: productName,
+                price: productPrice,
+                quantity: 1
+            });
+        }
+
+        // Save the updated cart to localStorage
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        // Optionally, show a message
+        alert(productName + ' has been added to your cart.');
     });
 });
 
-</script>
+
+        
+                // Search functionality
+                $('.search-bar').on('submit', function(e) {
+                    e.preventDefault(); // Prevent default form submission
+        
+                    var searchTerm = $('#searchInput').val().toLowerCase(); // Get the search term
+                    
+                    // Check if the search term matches a category
+                    if (searchTerm.includes("men")) {
+                        // Scroll to Men's section
+                        $('html, body').animate({
+                            scrollTop: $('#mens').offset().top
+                        }, 800);
+                    } else if (searchTerm.includes("women")) {
+                        // Scroll to Women's section
+                        $('html, body').animate({
+                            scrollTop: $('#womens').offset().top
+                        }, 800);
+                    } else if (searchTerm.includes("kids")) {
+                        // Scroll to Kids' section
+                        $('html, body').animate({
+                            scrollTop: $('#kids').offset().top
+                        }, 800);
+                    } else {
+                        // Show "Item not available" message
+                        alert("Item not available");
+                    }
+                });
+        </script>
+        
+        
+        
+        
 
     </body>
 </html>

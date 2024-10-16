@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Sneaker King</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div class=" cart-page">
+    <header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </header>
+
+    <section id="cart" class="cart-container">
+        <div class="container">
+            <h1>Your Cart</h1>
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+            <div id="cart-total">
+                <h2>Total: $<span id="total-price">0.00</span></h2>
+            </div>
+            <button id="checkout" disabled>Checkout</button>
+            <button id="clear-cart" disabled>Clear Cart</button>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="title-text2">
+            
+            <h1>Reach Us</h1>
+            </div>
+     <div class="footer-row">
+     <div class="footer-left">
+         <h1>Working Hours</h1>
+         <p>Monday to Friday - 8am to 8pm</p>
+         <p>Saturdays - 10am to 10pm</p>
+    
+         
+         <div class="social">
+           <p> 
+            <ul>
+                <li>Follow us: </li>
+                
+            </p>
+           
+       <li><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></li> 
+       <li> <a href ="https://www.snapchat.com/add/hunter.7878" class="fa fa-snapchat"></a></li> 
+       <li> <a href ="https://twitter.com/_kay_hunter" class="fa fa-twitter"></a></li> 
+       <li> <a href ="https://www.instagram.com/hunter.78780/" class="fa fa-instagram"></a></li> 
+    </ul>
+    </div>
+    </div>
+     <div class="orders-text">
+        <h1>Get In Touch</h1>
+        <p>22 Palas Street, Tantra</p>
+        <p>sneakerking@gmail.com</p>
+           <p>0243228371</p>
+            </div>
+            </div>
+    </section>
+</div>
+
+<script>
+    $(document).ready(function() {
+        var cart = JSON.parse(localStorage.getItem('cart')) || [];
+        var totalPrice = 0;
+
+        
+        function renderCart() {
+            $('#cart-items').empty(); 
+            totalPrice = 0; 
+
+            console.log("Rendering cart:", cart);  
+
+            if (cart.length === 0) {
+                $('#cart-items').html('<p>Your cart is empty.</p>');
+                $('#checkout').prop('disabled', true);
+                $('#clear-cart').prop('disabled', true);
+            } else {
+                cart.forEach(function(item, index) {
+                    
+                    let itemTotal = (item.price || 0) * (item.quantity || 1);  
+                    $('#cart-items').append(`
+                        <div class="cart-item">
+                            <h3>${item.name || 'Unknown Item'}</h3>
+                            <p>Price: $${(item.price || 0).toFixed(2)}</p>
+                            <p>Quantity: <input type="number" class="item-quantity" data-index="${index}" value="${item.quantity || 1}" min="1"></p>
+                            <p>Total: $<span class="item-total">${itemTotal.toFixed(2)}</span></p>
+                            <button class="remove-item" data-index="${index}">Remove</button>
+                        </div>
+                    `);
+                    totalPrice += itemTotal;
+                });
+
+                $('#checkout').prop('disabled', false);
+                $('#clear-cart').prop('disabled', false);
+            }
+
+            $('#total-price').text(totalPrice.toFixed(2));
+            console.log("Total price:", totalPrice);  
+        }
+
+        
+        renderCart(); 
+
+        
+        $(document).on('change', '.item-quantity', function() {
+            var index = $(this).data('index');
+            var newQuantity = parseInt($(this).val());
+
+            if (newQuantity > 0) {
+                cart[index].quantity = newQuantity;
+                localStorage.setItem('cart', JSON.stringify(cart));
+                renderCart(); 
+            }
+        });
+
+        t
+        $(document).on('click', '.remove-item', function() {
+            var index = $(this).data('index');
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            renderCart(); // 
+        });
+
+        
+        $('#clear-cart').on('click', function() {
+            localStorage.removeItem('cart');
+            cart = []; 
+            renderCart(); 
+        });
+
+        
+        $('#checkout').on('click', function() {
+            alert('Thank you for your purchase! Total: $' + totalPrice.toFixed(2));
+            localStorage.removeItem('cart');
+            cart = []; 
+            renderCart(); 
+        });
+    });
+</script>
+
+    
+
+
+
+</body>
+</html>
