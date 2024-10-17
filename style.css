@@ -757,7 +757,29 @@ li a:hover:not(.active) {
   header ul li a {
     font-size: 18px; 
   }
+
+  .cart-item {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  .cart-item h3 {
+    font-size: 16px; 
+  }
+
+  .cart-item p {
+    font-size: 14px; 
+  }
+
+ 
+  #checkout, #clear-cart {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
 }
+
 
 
 
